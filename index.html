@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/style.css">
+        <title></title>
+<!--fonts-->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,800;1,300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Merriweather+Sans:ital,wght@0,300;0,800;1,300&display=swap" rel="stylesheet">   
+<!--on scroll change nav background color-->
+<script>
+window.onscroll = () => {
+  const nav = document.querySelector('#navbar');
+  if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
+}
+</script>
+</head>
+    
+ <!-- Navbar -->
+<header>
+    <nav id="navbar">
+      <a href="index.html"><img class="logo" src="images/logo-white.png" ></a>
+        <ul class="nav-links">
+            <li class="nav-item active"><a href="#">Work</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+            <li class="nav-item"><a href="uploads/Willeck-resume1.pdf" target="_blank">Resume</a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/in/jenniferwilleck" target="_blank"><img src="images/linkedin.png" alt="Jennifer Willeck Resume"></a></li>
+          </ul>
+        </nav>
+      
+</header>
+<body>
+    <div class="jumbotron jumbotron-fluid main" style="background: url(/images/jumbotronimg.jpg) no-repeat; background-size: cover;">
+        <div class="container herohmtext">
+          <h1 class="display-3" style="background-image: none;">Hi, I'm Jennifer Willeck.</h1>
+          <h1 class="display-4" style="background-image: none;">UX/UI Designer based in Minneapolis.</h1>
+          <h2 class="display-5">Focusing on the User and creating a design that <span class="jumbobold">tells a story</span>.</h2>
+        </div>
+      </div>
+
+      <div class="basiccontent">
+    
+        <h1>
+           Select Work
+        </h1>
+
+</div>
+
+<!--Bootstrap Cards for Case Studies-->
+<div class="container">
+  <div class="row" >
+    <div class="column">  
+    <div class="card" style="width: 30rem;">
+        <img src="/images/gov-home-lg.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Government Website Redesign</h5>
+            <p class="card-text">How can I skip the lines at the DMV and quickly renew my vehicle tabs online?</p>
+            <a href="#" class="btn btn-primary">View Case Study</a>
+        </div>
+    </div>
+    </div>
+<div class="column">
+    <div class="card" style="width: 30rem;">
+        <img src="/images/npo-mobile.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Nonprofit Website Redesign</h5>
+            <p class="card-text">What is the process to foster a homeless animal and how do I get started?</p>
+            <a href="#" class="btn btn-primary">View Case Study</a>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="row" >
+    <div class="column">  
+    <div class="card" style="width: 30rem;">
+        <img src="/images/wiknow-home-lg.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">WiKnow - Wine Pairing App</h5>
+            <p class="card-text">What kind of wine would pair well with my dinner? How can I learn more about wine?</p>
+            <a href="#" class="btn btn-primary">View Case Study</a>
+        </div>
+    </div>
+    </div>
+<div class="column">
+    <div class="card" style="width: 30rem;">
+        <img src="/images/rentngo-mobile.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">New App for Travel</h5>
+            <p class="card-text">Book ahead your rental gear and enjoy your sports activity hassle free.</p>
+            <a href="#" class="btn btn-primary">View Case Study</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>    
+  <!--end cards --> 
+
+
+<div class="footer">
+    <div class="ft-content">
+        <img src="images/logo-white.png">
+    </div>
+    <div class="ft-middle">
+        <p>jwilleck@comcast.net</p>
+        <p>612-716-2319</p>
+        <a href="https://www.linkedin.com/in/jenniferwilleck" target="_blank"><img src="images/linkedin.png"></a>
+    </div> 
+    <div>
+        <ul class="footer-nav">
+            <li class="ftnav-item ftnav-active"><a href="#">Work</a></li>
+            <li class="ftnav-item"><a href="about.html">About</a></li>
+            <li class="ftnav-item"><a href="#">Contact</a></li>
+            
+          </ul>
+    </div>  
+    <div class="ft-content">
+        <a href="uploads/Willeck-resume1.pdf" target="_blank"><button class="ft-button">Resume</button></a>
+    </div>
+</div>
+
+</body>
+</html>
