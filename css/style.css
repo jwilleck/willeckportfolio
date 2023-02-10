@@ -136,6 +136,24 @@ nav {
       height: 23vw;
       object-fit: cover;
   }
+  .card {
+    transition: transform 250ms;
+  }
+  .card:hover {
+    transform: scale(1.02, 1.02);
+  }
+
+  .btn-primary {
+    background-color: #f4f4f4;
+    font-size: 16px;
+    font-weight: 400;
+    color:#03456c;
+    border: none;
+  }
+  .btn-primary:hover {
+    background-color: #A7D8F5;
+    color: black;
+  }
 
   .content {
     display: flex;
