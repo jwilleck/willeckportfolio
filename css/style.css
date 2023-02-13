@@ -414,7 +414,7 @@ text-decoration: none;
 
 .heroabout {
   display: flex;
-  justify-content:space-between;
+  justify-content:space-around;
   background-image: url(../images/about-hero.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -424,9 +424,9 @@ text-decoration: none;
   display: flex;
   justify-content:center;
   align-items: center;
-  margin-left: 40px;
-  width: 40%;
-  padding: 13% 5%;
+  width: 50%;
+  
+  padding: 13% 11% 13% 0%;
 }
 
 .contentright {  
@@ -453,7 +453,7 @@ text-decoration: none;
 }
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
   }
@@ -490,7 +490,6 @@ text-decoration: none;
   .skills-row {
     flex-direction: column;
   }
-
-  
 }
+
 
