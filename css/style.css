@@ -18,10 +18,17 @@ body {
 }
 
 .herohmtext {
+  display: flex;
+  flex-direction: column;
   width: 50%;
   margin-left: 40px;
   margin-right: 20px;
-  padding-top: 20px;
+  padding-top: 40px;
+}
+
+.herohmtext h1{
+  font-size: 40px;
+  font-weight: 600;
 }
 
 
@@ -46,8 +53,13 @@ body {
   justify-items:flex-end;
   align-items: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
   margin: auto 20px;
+  padding: 10% auto;
+}
+
+.headshot img {
+  background-size: 100% auto;
 }
 
 nav {
@@ -141,8 +153,8 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #000;
+    font-weight: lighter;
     line-height: 24px;
-    padding-bottom: 15px;
   }
 
   /*Bootstrap Cards for Case Studies*/
@@ -377,15 +389,6 @@ text-decoration: none;
   width: 50%;
 }
 
-.heroimg {
-  display:flexbox;
-  margin: 0 auto;
-}
-
-.heroimg img {
- width: 100%;  
-}
-
   .herotext p {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
@@ -396,16 +399,6 @@ text-decoration: none;
   
   
 }
-
-.herotext h1 {
-  font-size: 25px;
-  color:#03456c;
-  font-weight:700;
-  font-family: 'Montserrat', sans-serif;
-  background-image: none;
-  
-}
-
 
 .main {
   margin-top: 30px;
@@ -423,7 +416,7 @@ text-decoration: none;
   display: flex;
   justify-content:space-between;
   background-image: url(../images/about-hero.jpg);
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
@@ -441,5 +434,63 @@ text-decoration: none;
   justify-content:center;
   align-items: center;
   margin-right: 40px;
+}
+
+.contentright img {
+  border-radius: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  background-image: url(../images/redbg.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-container img {
+    max-width: 80%;
+  }
+
+  .herohmtext {
+   width: 95%;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .heroabout {
+    flex-direction: column;
+  }
+
+  .abouttext {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.499);
+    margin-top: 10%;
+    margin-left: 0;
+    padding: 5% 1% 1% 5%;
+  }
+
+  .skills-row {
+    flex-direction: column;
+  }
+
+  
 }
 
