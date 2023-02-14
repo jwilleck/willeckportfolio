@@ -215,25 +215,7 @@ nav {
     
   }
   
-  .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f4f4f4;
-    width: 350px;
-    border-radius: 10px;
-  }
-
-  .box p {
-   font-family: 'Marck Script', cursive;
-   font-size: 30px;
-   line-height: 30px;
-   padding: 10px;
-   text-align: center;
-   
-  }
-
-  .button-resume {
+   .button-resume {
     display: flex;
     background-color:white;
     font-family: 'Montserrat', sans-serif;
@@ -370,7 +352,8 @@ text-decoration: none;
   display: flex;
   justify-content:space-around;
   flex-direction: column;
-  margin: 0 40px;
+  margin: auto 40px;
+  
 }
 
 /*css for About page hero text*/
@@ -443,7 +426,7 @@ text-decoration: none;
 .flex-container {
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content:space-evenly;
   background-image: url(../images/redbg.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -453,7 +436,7 @@ text-decoration: none;
 }
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .flex-container {
     flex-direction: column;
   }
@@ -464,6 +447,9 @@ text-decoration: none;
 
   .herohmtext {
    width: 95%;
+  }
+  .herohmtext h1 {
+    font-size: 20px;
   }
 
   .footer {
