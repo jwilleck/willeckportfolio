@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>        
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <link rel="stylesheet" href="css/style.css">
         <title></title>
 <!--fonts-->        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,800;1,300&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Merriweather+Sans:ital,wght@0,300;0,800;1,300&display=swap" rel="stylesheet">   
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
 
 <!--on scroll change nav background color-->
 <script>
-window.onscroll = () => {
-  const nav = document.querySelector('#navbar');
-  if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
-}
-</script>
-</head>
+    $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+    });
+    </script>
     
- <!-- Navbar -->
-<header>
-    <nav id="navbar">
-      <a href="index.html"><img class="logo" src="./images/blacklogo.png" ></a>
-        <ul class="nav-links">
-            <li class="nav-item"><a href="index.html">Work</a></li>
-            <li class="nav-item active"><a href="#">About</a></li>
-            <li class="nav-item"><a href="#">Contact</a></li>
-            <li class="nav-item"><a href="uploads/Willeck-resume1.pdf" target="_blank">Resume</a></li>
-            <li class="linkedin"><a href="https://www.linkedin.com/in/jenniferwilleck" target="_blank"><img src="./images/linkedlt-sm.png" alt="Jennifer Willeck Resume"></a></li>
-          </ul>
-          
-        </nav>
+    </head>
+    <header>
+    <!-- bootstrap navbar -->
+    
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-red navbar-default">
+        <a class="navbar-brand" href="#">
+          <img src="./images/blacklogo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="nav navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="index.html">Work</a>
+          <a class="nav-item nav-link active" href="#">About <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Contact</a>
+          <a class="nav-item nav-link" href="#">Resume</a>
+        </div>
+      </div>
+      </nav>
       
 </header>
 <body>
@@ -58,19 +58,19 @@ window.onscroll = () => {
 <div class="content">
   <div class="contentleft">
       <h1>
-          Jennifer's Story - Always Improving and Growing
+          My Story - Always Improving and Growing
       </h1>
       <p>
-          Jennifer has been in front of a computer since post high school, starting as a LAN Administrator. While she was fixing computers and supporting software, she finished her Bachelors Degree in Business.
+          Early in my career, I have been in front of a computer with my first job as a LAN Administrator. While fixing computers and supporting software, I finished my Bachelors Degree in Business.
       </p>
       <p>
-          Jennifer then changed careers and became the first female Remote Data Recovery Engineer in the world. While that was a rewarding responsibility, she decided she wanted to bring out the creative side of her skills as she always had an interest in design. 
+          I then changed careers and dived into data recovery and became the first female Remote Data Recovery Engineer in the world. While that was a rewarding, I decided to exlore the creative side of my skills as I always had an interest in design. 
       </p>
       <p>
-          To grow and explore new opportunities, Jennifer became a freelance contractor and began building websites using best practices for responsive design and SEO. Always focusing on growth mindset, she enhanced her skillset by completing her UX/UI Design certificate.
+          To grow and explore new opportunities, I became a freelance contractor and began building websites using best practices for responsive design and SEO. Always focusing on growth mindset, I enhanced my skillset by completing UX/UI Design boot camp.
       </p>
       <p>
-        In her free time, Jennifer volunteers to a local nonprofit that focuses on fishing education and adventures. On her days off, she loves to ski, camp, hike, travel, and most importantly spend time with her family.
+        I love being engaged in my community by volunteering at a local nonprofit that focuses on fishing education and adventures. When I'm not designing, I love to ski, camp, hike, travel, and most importantly spend time with my family.
       </p>
   </div>
   <div class="contentright">
@@ -166,6 +166,8 @@ window.onscroll = () => {
         <a href="uploads/Willeck-resume1.pdf" target="_blank"><button class="ft-button">Resume</button></a>
     </div>
 </div>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
