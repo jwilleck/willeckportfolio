@@ -1,7 +1,8 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
-  
+ 
   *, *::before, *::after {
     box-sizing: inherit;
     margin: 0;
@@ -11,6 +12,16 @@ html {
 
 .ml-auto {
   text-align: center;
+}
+
+.ml2 {
+  font-weight: 400;
+  font-size: 2.3em;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
 
 .navbar-default{
@@ -26,8 +37,7 @@ html {
 }
 
 .navbar-brand {
-  height: 60px;
-  
+  height: 60px;  
 }
 
 .navbar-brand img {
@@ -43,7 +53,6 @@ html {
   height: 80px;
 }
 
-
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -58,7 +67,7 @@ body {
   flex-direction: column;
   width: 50%;
   margin-left: 40px;
-  margin-right: 20px;
+  margin-right: 10px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -76,9 +85,6 @@ body {
   font-weight: 600;
 }
 
-.jumbotron {
- 
-}
 .headshot {
   display: flex;
   justify-items:center;
@@ -161,14 +167,14 @@ body {
   
    .button-resume {
     display: flex;
+    height: 90px;
     background-color:white;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
-    margin: 20px;   
+    padding: 33px 20px;
+    margin-left: -10px;
     transition: opacity 0.5s;
   }
   .contentright a {
@@ -202,7 +208,7 @@ body {
     width: 260px;
     border-radius: 5px;
     margin: 0 10px 20px 10px;
-    background-color: #f4f4f4;
+   
     padding: 10px 10px;
  }
 
@@ -223,6 +229,9 @@ body {
 
   .skillscard img {
     display: flex;
+    width: 50px;
+    height: auto;
+    margin-left:30px;
   }
 
   .footer {
@@ -311,8 +320,8 @@ text-decoration: none;
   flex-direction: row;
 }
 .fticon img {
- width: 25px;
- height: 25px;
+ width: 20px;
+ height: 20px;
   margin-right: 10px;
   }
 
@@ -380,9 +389,25 @@ text-decoration: none;
   width: 100%;
 }
 
-.contactform {
-  display: flex;
-  
+.contacticons img {
+  width: 75px;
+  height: 75px;
+}
+
+.contactlf {
+  padding-bottom: 20px;
+}
+
+.contactheadshot img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.jumbo-contact {
+  text-align: center;
+  background-color:white;
 }
 
 /* Responsive layout - Mobile */
@@ -437,6 +462,9 @@ text-decoration: none;
   }
 }
 
+.emailform {
+  width: 500px;
+}
 
 /* Responsive layout - tablet */
 @media only screen and (max-width: 992px) {
@@ -473,3 +501,66 @@ text-decoration: none;
 
 }
 
+/*cube animation*/
+.sk-cube-grid {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  
+}
+
+.sk-cube-grid .sk-cube {
+  width: 30%;
+  height: 30%;
+  background-color:#7A2048;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
+}
