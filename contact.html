@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>        
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/style.css">
+        <title></title>
+<!--fonts-->        
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+<!--on scroll change nav background color-->
+<script>
+    $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+    });
+    </script>
+    
+    </head>
+    <header>
+    <!-- bootstrap navbar -->
+    
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-red navbar-default">
+        <a class="navbar-brand" href="#">
+          <img src="./images/blacklogo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="nav navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="index.html">Work</a>
+          <a class="nav-item nav-link" href="aboutme.html">About</a>
+          <a class="nav-item nav-link active" href="#">Contact<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="uploads/Willeck-resume1.pdf">Resume</a>
+        </div>
+      </div>
+      </nav>
+      
+</header>
+<body>
+ 
+<div class="main">
+  
+
+ <div class="jumbotron">
+  <h1 class="display-4">Let's Start a Conversation</h1>
+  <p class="lead"> I am currently available for new projects. I invite to you reach out so we can start a conversation.</p>  
+</div>
+
+<div class="container">
+  <form>
+    <!-- Name input -->
+    <div class="form-outline mb-4">
+      <input type="text" id="form4Example1" class="form-control" />
+      <label class="form-label" for="form4Example1">Name</label>
+    </div>
+  
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <input type="email" id="form4Example2" class="form-control" />
+      <label class="form-label" for="form4Example2">Email address</label>
+    </div>
+  
+    <!-- Message input -->
+    <div class="form-outline mb-4">
+      <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+      <label class="form-label" for="form4Example3">Message</label>
+    </div>
+  
+    <!-- Checkbox -->
+    <div class="form-check d-flex justify-content-center mb-4">
+      <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+      <label class="form-check-label" for="form4Example4">
+        Send me a copy of this message
+      </label>
+    </div>
+  
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+  </form>
+</div>
+
+</div>
+<div class="footer">
+    <div class="ft-content">
+        <img src="./images/blacklogo.png">
+    </div>
+    <div class="ft-middle">
+        <div class="fticon">
+          <img src="./images/icons/email.png">
+          <p>jwilleck@comcast.net</p>
+        </div>
+        <div class="fticon">
+          <img src="./images/icons/phone.png">
+          <p>612-716-2319</p>
+        </div>
+        <div class="fticon">
+          <a href="https://www.linkedin.com/in/jenniferwilleck" target="_blank"> <img src="./images/icons/linkedin.png"></a>
+          <p>JenniferWilleck</p>
+        </div>
+        </div>
+    <div>
+        <ul class="footer-nav">
+            <li class="ftnav-item"><a href="index.html">Work</a></li>
+            <li class="ftnav-item"><a href="aboutme.html">About</a></li>
+            <li class="ftnav-item ftnav-active"><a href="#">Contact</a></li>
+            
+          </ul>
+    </div>  
+    <div class="ft-content">
+        <a href="uploads/Willeck-resume1.pdf" target="_blank"><button class="ft-button">Resume</button></a>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
