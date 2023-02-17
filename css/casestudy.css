@@ -30,18 +30,39 @@
   }
 
   .gov-img img {
-    width: 400px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
+    object-fit: cover;
 
   }
 
-  .quote {
-    font-size: 35px;
+   .quote {
+    font-size: 30px;
     line-height: 40px;
+    padding: 10px 20px;
 
   }
 
-  .hightlight {
-    background-color: #BC8FA3;
+  .highlight {
+    background-color: #bc8fa3c2;
+    border-left: 3px solid black;
   }
+
+  .highlight h1 {
+    font-size: 26px;
+  }
+
+  .move20 {
+    padding-top: 20px;
+  }
+
+  .container {
+    padding: 20px auto;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  
