@@ -1,7 +1,7 @@
 /* Case Study 1 */
 .jumbo-case1 {
     background-image: url(/images/case1/cs1-header.jpg);
-    height: 550px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -40,4 +40,8 @@
     font-size: 35px;
     line-height: 40px;
 
+  }
+
+  .hightlight {
+    background-color: #BC8FA3;
   }
