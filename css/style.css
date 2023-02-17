@@ -361,8 +361,10 @@ text-decoration: none;
   justify-content:space-around;
   
   background-image: url(../images/about-hero.jpg);
-  background-size:cover;
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .abouttext {
@@ -424,6 +426,23 @@ text-decoration: none;
   text-align: center;
   background-color:white;
 }
+/* Case Study 1 */
+.jumbo-case1 {
+  background-image: url(/images/case1/cs1-header.jpg);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cs1text {
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.488);
+  padding: 10px 20px;
+  margin-top:20px;
+}
+
+
+
 
 /* Responsive layout - Mobile */
 @media only screen and (max-width: 650px) {
