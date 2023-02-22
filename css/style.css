@@ -34,6 +34,7 @@ html {
 
 .navbar {
   height: auto;
+  font-size: 20px;
 }
 
 .navbar-brand {
@@ -43,7 +44,7 @@ html {
 .navbar-brand img {
   position: absolute;
   top: -1px;
-  width: 110px;
+  width: 258px;
   height: 100px;
   overflow: visible;
   vertical-align: middle;
@@ -320,7 +321,7 @@ text-decoration: none;
 }
 
 .ft-content img {
-  width: 110px;
+  width: 258px;
   height: 100px;
 }
 
