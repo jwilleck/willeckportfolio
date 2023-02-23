@@ -35,26 +35,17 @@
   }
 
   .gov-img-sm img {
-    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
     height: auto;
-    margin: 0 auto;
-    align-items: center;
-    object-fit: cover;
-  }
-  .gov-img-sm img {
-    max-width: 70%;
-    height: auto;
-    margin: 0 auto;
-    align-items: center;
-    object-fit: cover;
-
   }
 
    .quote {
     font-size: 30px;
     line-height: 40px;
     padding: 10px 20px;
-
   }
 
   .highlight {
@@ -81,7 +72,9 @@
   .container-fluid {
     padding-right: 50px;
     padding-left: 50px;
-    margin: 5% auto;
+    margin-top: 100px;
+    margin-left: 0px;
+    margin-right: 40px;
   }
   
   ul {
