@@ -6,6 +6,14 @@
     background-size: cover;
   }
 
+  .jumbo-case2 {
+    background-image: url(/images/case2/npo-hero.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
   .cs1text {
     width: 550px;
     background-color: rgba(255, 255, 255, 0.488);
@@ -101,10 +109,34 @@
     background-color: #7A2048; /* Add a dark-grey background on hover */
   }
 
+  .npo-solution {
+    background-image: url(/images/case2/saddog.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .solution {
+    
+    background-color: rgba(255, 255, 255, 0.716);
+    padding-left: 30px;
+    margin-top: 6%;
+    margin-right: 55%;
+    
+  }
+
   /* Responsive layout - Mobile */
 @media only screen and (max-width: 650px) { 
   .cs1text {
     width: 450px;
   }
+
+  .solution {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+  }
 }
+
   

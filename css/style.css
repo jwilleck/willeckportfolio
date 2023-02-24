@@ -38,20 +38,20 @@ html {
 }
 
 .navbar-brand {
-  height: 60px;  
+  height: 65px;  
 }
 
 .navbar-brand img {
   position: absolute;
-  top: -1px;
-  width: 258px;
-  height: 100px;
+  top: -10px;
+  width: 284px;
+  height: 110px;
   overflow: visible;
   vertical-align: middle;
 }
 
-.navbar-custom {
-  height: 80px;
+.nav-link {
+  padding-left: 20px !important;
 }
 
 body {
@@ -308,16 +308,16 @@ text-decoration: none;
 }
 
 .ftnav-item a {
-  color: white;
+  color: #BC8FA3;
   text-decoration: none;
 }
 
 .ftnav-item:hover a {
-  color: #BC8FA3;
+  color: #fff;
 }
 
 .ftnav-active a {
- color: #BC8FA3;
+ color: #fff;
 }
 
 .ft-content img {
