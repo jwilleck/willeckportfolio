@@ -60,7 +60,7 @@
     transition: transform 1300ms;
   }
   
-  .row:hover .highlight {
+  .highlight:hover {
     transform:scale(1.01, 1.01);
     background-color: #7a204828;
     transition: transform 1300ms;
@@ -137,6 +137,18 @@
     margin-right: 55%;
     
   }
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-10%);
+  transition: all 1s;  
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
   /* Responsive layout - Mobile */
 @media only screen and (max-width: 650px) { 
