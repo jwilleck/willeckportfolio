@@ -191,9 +191,7 @@ body {
     cursor: pointer;
   }
 
-  .aboutimg img {
-  margin: 0 auto;
-  }
+  
 
   .skillscontent {
     display: flex;
@@ -410,14 +408,18 @@ text-decoration: none;
   text-decoration: none;
 }
 
-
-
 .jumbo-contact {
   text-align: center;
   background-color:white;
 }
 
-
+.copyright {
+  font-size: 15px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+}
 
 
 
@@ -447,6 +449,13 @@ text-decoration: none;
     font-size: 18px;
   }
 
+  .aboutimg img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    }
+
   .footer {
     flex-direction: column;
     text-align: center;
@@ -471,16 +480,17 @@ text-decoration: none;
   .skills-row {
     flex-direction: column;
   }
-
-  .headshot img {
-    width: 250px;
+  
+   .headshot img {
+    width: 300px;
+    margin: 0 auto;
   }
 
   .skills-row {
     align-items: center;
   }
 
-
+ 
 
 
 
