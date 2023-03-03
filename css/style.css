@@ -66,22 +66,26 @@ body {
 .herohmtext {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin-left: 40px;
+  margin: auto 0;
+  width: 45%;
+  height: 55%;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  color: white;
+  background-color: #00000037;
   
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .herohmtext h1{
   font-size: 40px;
   font-weight: 600;
+  color: white;
 }
 
 .container h2 {
   line-height: 40px;
+  color: white;
 }
-
 
 .jumbobold {
   font-weight: 600;
@@ -378,16 +382,25 @@ text-decoration: none;
   display: flex;
   flex-direction: row;
   justify-content:space-evenly;
-  background-image: url(../images/redbg.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  
+  padding-top: 30px;
+  padding-bottom: 80px;
 }
+.heroimg {
+  background-image: url(../images/home-hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+ }
+
+ .heroimg img {
+  width: 100%;
+  height: auto;
+ }
+
 
 .headshot img {
-  width: 100%;
+  width: 90%;
+  padding-top: 50px;
 }
 
 .contacticons img {
@@ -431,6 +444,8 @@ text-decoration: none;
   }
 
   .herohmtext {
+    margin-top: 40px;
+    padding-top: 20px;
     width: auto;
   }
 
