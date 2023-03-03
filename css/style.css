@@ -124,6 +124,10 @@ body {
     line-height: 24px;
   }
 
+  .skillscard h2 {
+    color: black;
+  }
+
   .card-img-top2 {
     width: 300px;
     height: auto;
@@ -172,7 +176,15 @@ body {
     color: white;
   }
 
- 
+  .btn-primary:active {
+    background-color: #BC8FA3 !important;
+    color: white;
+  }
+
+  .btn-primary:focus {
+    outline: none;
+    box-shadow: none;
+  }
   
    .button-resume {
     display: flex;
@@ -432,6 +444,10 @@ text-decoration: none;
   background-color: #000;
   text-align: center;
   padding: 5px 0px 5px 0px;
+}
+
+.contactheadshot h2 {
+  color: black !important;
 }
 
 
