@@ -9,14 +9,30 @@ html {
     padding: 0;
   }
 
+.biotext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+}
+
+.biotext h1 {
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.bio h2 {
+  color: black !important;
+  padding-top: 30px;
+}
 
 .ml-auto {
   text-align: center;
 }
 
 .ml2 {
-  font-weight: 400;
-  font-size: 2.3em;
+  font-weight: 500;
+  font-size: 2.7em;
   padding-top: 20px;
 }
 
@@ -67,25 +83,31 @@ body {
 .herohmtext {
   display: flex;
   flex-direction: column;
-  margin: auto 0;
-  width: 45%;
-  height: 55%;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  margin: auto auto;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  text-align: center;
   color: white;
-  background-color: #00000037;
+  background-color: #00000042;
   
+  width: 65%;
 }
 
 .herohmtext h1{
-  font-size: 40px;
+  font-size: 70px;
   font-weight: 600;
-  color: white;
+  
+}
+
+.herohmtext h3{
+  font-size: 45px;
+  font-weight: 500;
+  
 }
 
 .container h2 {
   line-height: 40px;
-  color: white;
+  color: black;
 }
 
 .jumbobold {
@@ -95,8 +117,15 @@ body {
 
 
 .jumbotron h1 {
-  color: black;
+ color: white;
+
   
+}
+
+.jumbotron {
+  background-image: url(../images/home-hero3.png);
+  background-size: cover;
+  background-position: right;
 }
 
 .headshot {
@@ -349,9 +378,7 @@ text-decoration: none;
   margin-right: 10px;
   }
 
-.main {
-  margin-top: 30px;
-}
+
 
 .container-fluid {
   display: flex;
@@ -391,33 +418,27 @@ text-decoration: none;
   border-radius: 10px;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content:space-evenly;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.heroimg {
-  background-image: url(../images/home-hero3.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  
-  
- }
 
- .heroimg img {
-  width: 100%;
-  height: auto;
-  
- }
+
+ .flex-container {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-image: url('../images/hero1.png');
+  background-repeat:no-repeat ;
+  background-size: contain;
+  background-position: center;
+
+  background-attachment: fixed;
+}
+
+ 
+ 
 
 
 .headshot img {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 0px;
+  
 }
 
 .contacticons img {
@@ -459,27 +480,13 @@ text-decoration: none;
 
 /* Responsive layout - Mobile */
 @media only screen and (max-width: 650px) {
+ 
   .flex-container {
-    flex-direction: column;
-    justify-content: space-evenly;
+    background-size: contain;
+   
   }
 
-  .herohmtext {
-    margin-top: 40px;
-    padding-top: 20px;
-    width: auto;
-  }
 
-   .herohmtext h1 {
-    font-size: 20px;
-    padding-top: 5px;
-    padding-bottom: 1px;
-  }
-
-  .herohmtext h2 {
-    font-size: 20px;
-    font-weight: lighter;
-  }
 
   p {
     font-size: 18px;
@@ -532,7 +539,10 @@ text-decoration: none;
     padding-top: 5px;
   }
 
-
+.biotext h1 {
+  font-size: 26px;
+  line-height: 36px;
+}
 
 }
 
@@ -541,21 +551,39 @@ text-decoration: none;
 /* Responsive layout - tablet */
 @media only screen and (max-width: 992px) {
 
+  .flex-container {
+    background-size: contain;
+    
+    
+  }
+
 .card-img-top {
   max-height: 200px;
   object-fit: cover;
 }
   
+.herohmtext {
+  width:100%;
+}
+
   .herohmtext h1 {
-     font-size: 20px;
+     font-size: 30px;
      padding-top: 5px;
      padding-bottom: 1px;
+     
    }
+
+  .herohmtext h3 {
+    font-size: 20px;
+  }
 
   .herohmtext h2 {
     font-size: 20px;
     font-weight: lighter;
   }
+
+  
+
 
   .content {
     flex-direction: column;
