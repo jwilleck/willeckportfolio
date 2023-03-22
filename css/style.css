@@ -398,6 +398,10 @@ text-decoration: none;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.jumbotron-flex {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
 
 .abouttext {
   display: flex;
