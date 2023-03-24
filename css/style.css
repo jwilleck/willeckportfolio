@@ -159,10 +159,12 @@ body {
   }
 
   .card-img-top2 {
-    width: 400px;
+    max-width: 400px;
     height: auto;
     margin: 0 auto;
   }
+
+  
 
   /*Bootstrap Cards for Case Studies*/
 
@@ -490,7 +492,10 @@ text-decoration: none;
    
   }
 
-
+  .mainhead img {
+    max-width: 400px;
+    margin: auto auto;
+  }
 
   p {
     font-size: 18px;
