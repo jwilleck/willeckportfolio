@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/casestudy.css">
         <title></title>
 <!--fonts-->        
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,6 +32,8 @@ $(window).scroll(function(){
 	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
 });
 </script>
+
+<script defer src="app.js"></script>
 
 <!--animate text-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
@@ -58,7 +61,7 @@ $(window).scroll(function(){
 </header>
 <body>
 
-
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 <div class="jumbotron main">
   <div class="herohmtext">
@@ -87,7 +90,7 @@ $(window).scroll(function(){
 
 
 <div class="container bio">
-  <h1 style="padding-bottom: 40px; font-weight: bold;">Select Work</h1>
+  <h2 style="padding-bottom: 40px; ">Case Studies</h2>
 </div>
 
 <!--Bootstrap Cards for Case Studies-->
@@ -140,6 +143,102 @@ $(window).scroll(function(){
    
   <!--end cards --> 
 
+ <!--Recent Projects --> 
+<section class="hidden show" style="background-color: rgba(128, 128, 128, 0.106);">
+ <div class="container bio">
+  <h2 style="padding-bottom: 40px; ">Recent Work</h2>
+</div>
+
+<div class="container ">
+<div class="row">
+  <div class="col-md-6 project">
+   <a href="https://slohealthcenter.com" target="_blank"><img src="./images/slohealth.png"></a>
+  </div>
+  <div class="col-md-6">
+    <h1>SLO Health Center</h1>
+    <ul style="padding-left: 20px;">
+    <li>Moved website from WIX to independent hosting services. </li>
+    <li>Redesigned website with new information architecture</li>
+    <li>Iterated on new design based on user feedback and testing.</li>
+    <li>Increased traffic with improved user experience. </li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<div class="container ">
+  <div class="row">
+    <div class="col-md-6 project">
+    <a href="https://beyondnewbeginnings.org" target="_blank"><img src="./images/bnb.png"></a>
+    </div>
+    <div class="col-md-6">
+    
+      <h1>Beyond New Beginnings</h1>
+      <ul style="padding-left: 20px;">
+      <li>Built a new website with WordPress and incorporated user centered design.</li>
+      <li>Enhanced website traffic and reduced bounce rate.</li>
+      <li>Increased online donations with user friendly form and visibility.</li>
+      <li>Introduced and maintained marketing goals with Google Analytics and SEO.</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 project">
+      <a href="https://blackhawksoccer.org" target="_blank"><img src="./images/blackhawksoccer.png"></a>
+      </div>
+      <div class="col-md-6">
+      
+        <h1>Saint Paul Blackhawk Soccer</h1>
+        <ul style="padding-left: 20px;">
+        <li>Collaborated with clients to identify website project needs.</li>
+        <li>Proposed new design with focus on clear navigation and engaging interface.</li>
+        <li>Completed user testing of new design, made iterations, and deployed the new site.</li>
+        <li>Increased number of athlete registrations.</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 project">
+        <a href="https://betterthanhealthy.live" target="_blank"><img src="./images/betterthanhealthy.png"></a>
+        </div>
+        <div class="col-md-6">
+        
+          <h1>Better Than Healthy</h1>
+          <ul style="padding-left: 20px;">
+          <li>Created new high fidelity prototype for customer to review.</li>
+          <li>Created new logo and style guide with colors that pass Adobe color test.</li>
+          <li>Completed user testing of new design, made iterations, and deployed the new site.</li>
+          <li>Incorporated best practices for fast loading pages.</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 project ">
+          <a href="https://cafwf.org" target="_blank"><img src="./images/cafwf.png"></a>
+          </div>
+          <div class="col-md-6">
+          
+            <h1>Chaska Area Fishing With Friends</h1>
+            <ul style="padding-left: 20px;">
+            <li>Moved website from Squarespace to new hosting server.</li>
+            <li>Redesigned website for better user experience and interface.</li>
+            <li>Streamlined online bookings with digital forms.</li>
+            <li>Increased nonprofit visability and fundraising with social marketing.</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+
+ </section>       
 
 <div class="footer">
     <div class="ft-content">
@@ -196,6 +295,26 @@ anime.timeline({loop: false})
     delay: (el, i) => 70*i
   });
 </script>
-
+<script>
+  // Get the button:
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+  </script>
 </body>
 </html>

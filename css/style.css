@@ -482,10 +482,19 @@ text-decoration: none;
   color: black !important;
 }
 
+.project img {
+  margin-top: -40px;
+}
 
 
 /* Responsive layout - Mobile */
 @media only screen and (max-width: 650px) {
+
+  .project img {
+    margin-top: 0px;
+    margin-left: -80px;
+    margin-bottom: -60px;
+  }
  
   .flex-container {
     background-size: contain;
@@ -564,6 +573,12 @@ text-decoration: none;
     background-size: contain;
     
     
+  }
+
+  .project img {
+    margin-left: 0px;
+    margin-left: -80px;
+    margin-bottom: -60px;
   }
 
 .card-img-top {
