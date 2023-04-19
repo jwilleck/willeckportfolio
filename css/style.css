@@ -186,6 +186,14 @@ body {
     transform: scale(1.02, 1.02);
   }
 
+  .pro-card {
+    transition: transform 250ms;
+  }
+
+  .pro-card:hover {
+    transform: scale(1.02, 1.02);
+  }
+
   .card-body h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -487,13 +495,16 @@ text-decoration: none;
 }
 
 
+
 /* Responsive layout - Mobile */
 @media only screen and (max-width: 650px) {
 
   .project img {
+    width:425px;
+    height:auto;
     margin-top: 0px;
-    margin-left: -80px;
-    margin-bottom: -60px;
+   
+    margin-bottom: -50px;
   }
  
   .flex-container {
@@ -576,9 +587,11 @@ text-decoration: none;
   }
 
   .project img {
+    width:425px;
+    height:auto;
     margin-left: 0px;
-    margin-left: -80px;
-    margin-bottom: -60px;
+
+    margin-bottom: -50px;
   }
 
 .card-img-top {
