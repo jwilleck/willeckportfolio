@@ -166,7 +166,13 @@ body {
     margin: 0 auto;
   }
 
-  
+  .cardlg {
+    transition: transform 250ms;
+  }
+
+  .cardlg:hover {
+    transform: scale(1.02, 1.02);
+  }
 
   /*Bootstrap Cards for Case Studies*/
 
@@ -180,9 +186,17 @@ body {
   }
 
   .card-img-top {
-  max-height: 300px;
+  max-height: 500px;
   object-fit: cover;
 }
+
+.cs-desc {
+ text-align: center;
+ margin: auto auto;
+  
+}
+
+
 
   .card:hover {
     transform: scale(1.02, 1.02);
@@ -501,6 +515,11 @@ text-decoration: none;
 /* Responsive layout - Mobile */
 @media only screen and (max-width: 650px) {
 
+  .cs-desc {
+    margin-top: 40px;
+    margin-bottom:40px;
+  }
+
   .project img {
     width:425px;
     height:auto;
@@ -581,6 +600,12 @@ text-decoration: none;
 
 /* Responsive layout - tablet */
 @media only screen and (max-width: 992px) {
+
+  .cs-desc {
+    margin-top: 40px;
+    margin-bottom:40px;
+  }
+
 
   .flex-container {
     background-size: contain;
