@@ -29,7 +29,22 @@
     background-size: cover;
     background-position: center;
   }
-    
+
+  .jumbo-case5 {
+    background-image: url(/images/case5/diasporalogo.png);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: lighter;
+    line-height: 24px;
+  }
    .cs1text {
     width: 530px;
     background-color: rgba(255, 255, 255, 0.767);
